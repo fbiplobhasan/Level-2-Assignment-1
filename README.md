@@ -1,4 +1,4 @@
-ব্লগ–১: TypeScript-এ Interface এবং Type এর পার্থক্য
+## Heading 2 ব্লগ–১: TypeScript-এ Interface এবং Type এর পার্থক্য
 
 TypeScript এ interface এবং type — দেখতে একইরকম মনে হলেও, দুটির মাঝে গুরুত্বপূর্ণ পার্থক্য আছে। নিচে সহজভাবে ব্যাখ্যা করা হলো।
 
