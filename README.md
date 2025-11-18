@@ -39,7 +39,7 @@ age: number;
 
 { name: string; age: number }
 
-📌 Type-এ এই সুবিধা নেই।
+ Type-এ এই সুবিধা নেই।
 একবার declare করলে আবার declare করা যায় না।
 
 ### ৩. Type আরো flexible
@@ -57,7 +57,7 @@ function type
 type Status = "success" | "error";
 type Point = [number, number];
 
-📌 এগুলো interface দিয়ে করা যায় না।
+ এগুলো interface দিয়ে করা যায় না।
 
 ### ৪. Object structure এর জন্য Interface সেরা
 
@@ -76,7 +76,7 @@ let value: any = "Hello";
 value = 10;
 value = true;
 
-📌 Very Dangerous → কারণ ভুল হলেও error দেখাবে না।
+ Very Dangerous → কারণ ভুল হলেও error দেখাবে না।
 
 ### ২. unknown → “assign করা যায়, but ব্যবহার করতে চেক লাগে”
 let data: unknown;
@@ -91,17 +91,17 @@ if (typeof data === "string") {
 console.log(data.toUpperCase());
 }
 
-📌 unknown = safer alternative to any
+ unknown = safer alternative to any
 
 ### ৩. never → "যা কখনো return করবে না"
-❗ Error throw করলে
+ Error throw করলে
 function throwError(msg: string): never {
 throw new Error(msg);
 }
 
-❗ Infinite loop হলে
+ Infinite loop হলে
 function loopForever(): never {
 while (true) {}
 }
 
-📌 এই ফাংশনগুলো কখনোই শেষ হয় না, তাই return type = never.
+ এই ফাংশনগুলো কখনোই শেষ হয় না, তাই return type = never.
